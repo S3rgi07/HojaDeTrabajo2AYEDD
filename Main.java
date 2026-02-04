@@ -1,5 +1,12 @@
 import java.io.IOException;
+
 public class Main {
+    /** 
+     * @param args
+     */
+    /** 
+     * @param args
+     */
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         FileReader fileReader = new FileReader();
@@ -9,7 +16,7 @@ public class Main {
         } catch (IOException ex) {
             System.out.println("No se pudo encontrar o leer el archivo 'datos.txt'. " + ex.getMessage());
         }
-        int result = calculator.operate(input);
+        double result = calculator.operate(input);
         System.out.println("Calculadora de Notación Postfix");
         System.out.println("------------------------------");
         System.out.println("Expresión: " + input);

@@ -10,11 +10,27 @@ public class StackA<T> implements Stack<T> {
         this.stack = new ArrayList<>();
     }
 
+
+    /** 
+     * Agrega un item al stack.
+     * @param item
+     */
+    /** 
+     * @param item
+     */
     @Override
     public void push(T item) {
         stack.add(item);
     }
 
+
+    /** 
+     * Remueve y retorna el item en la cima del stack.
+     * @return
+     */
+    /** 
+     * @return T
+     */
     @Override
     public T pop() {
         if (stack.isEmpty()) {
@@ -23,6 +39,14 @@ public class StackA<T> implements Stack<T> {
         return stack.remove(stack.size() - 1);
     }
 
+
+    /** 
+     * Retorna el item en la cima del stack sin removerlo.
+     * @return
+     */
+    /** 
+     * @return T
+     */
     @Override
     public T peek() {
         if (stack.isEmpty()) {
@@ -31,6 +55,13 @@ public class StackA<T> implements Stack<T> {
         return stack.get(stack.size() - 1);
     }
 
+    /**
+     * Verifica si el stack está vacío
+     * @return
+     */
+    /** 
+     * @return boolean
+     */
     public boolean isEmpty() {
         return stack.isEmpty();
     }

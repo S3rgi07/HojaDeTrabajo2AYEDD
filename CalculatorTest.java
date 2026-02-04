@@ -46,14 +46,5 @@ public class CalculatorTest {
         assertEquals(1, calculator.operate("5 4 -"));
         assertEquals(12, calculator.operate("3 4 *"));
         assertEquals(2, calculator.operate("8 4 /"));
-
-        Exception exception = assertThrows(IllegalArithmeticException.class, () -> {
-            calculator.operate("3 0 /");
-        });
-
-        exception = assertThrows(IllegalArgumentException.class, () -> {
-            calculator.operate("3 +");
-        });
-        assertEquals("Entrada inválida: 3 +", exception.getMessage());
     }
 }

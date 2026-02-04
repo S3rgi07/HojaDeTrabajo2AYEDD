@@ -3,9 +3,9 @@ public interface Calc {
 
     /**
      * 
-     * Performs an operation based on the input string.
+     * Realiza una operación matemática basada en la cadena de entrada.
      * @param input
      * @return
      */
-    public int operate(String input);
+    public double operate(String input);
 }
