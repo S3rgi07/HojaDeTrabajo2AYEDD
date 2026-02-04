@@ -12,6 +12,10 @@ public class Main {
             System.out.println("No se pudo encontrar o leer el archivo 'datos.txt'. " + ex.getMessage());
         }
         int result = calculator.operate(input);
+        System.out.println("Calculadora de Notación Postfix");
+        System.out.println("------------------------------");
+        System.out.println("Expresión: " + input);
         System.out.println("Resultado: " + result);
+        System.out.println("------------------------------");
     }
 }
