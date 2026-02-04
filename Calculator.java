@@ -1,9 +1,10 @@
 public class Calculator implements Calc {
 
-    private Vector<Integer> stack;
-    
+    private StackA<Integer> stack = new StackA<>();
+
     public boolean isOperator(String token) {
         return token.equals("+") || token.equals("-") || token.equals("*") || token.equals("/");
+
     }
 
     public int applyOperator(int a, int b, String operator) {

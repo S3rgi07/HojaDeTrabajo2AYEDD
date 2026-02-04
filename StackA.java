@@ -1,10 +1,12 @@
+//Esta clase fue utilizada para comprobar el funcionamiento con un ArrayList
+
 import java.util.ArrayList;
 
-public class Vector<T> implements Stack<T> {
+public class StackA<T> implements Stack<T> {
 
     private ArrayList<T> stack;
 
-    public Vector() {
+    public StackA() {
         this.stack = new ArrayList<>();
     }
 
@@ -28,5 +30,9 @@ public class Vector<T> implements Stack<T> {
         }
         return stack.get(stack.size() - 1);
     }
-    
+
+    public boolean isEmpty() {
+        return stack.isEmpty();
+    }
+
 }
