@@ -1,7 +1,7 @@
+
 import java.util.Arrays;
 
 public class StackO<T> implements Stack<T> {
-    
 
     private T[] stack;
     private int capacidad_inicial = 10;
@@ -32,13 +32,12 @@ public class StackO<T> implements Stack<T> {
     public T peek() {
         if (top == -1) {
             throw new UnsupportedOperationException("El stack está vacío");
-        }
-        else if (isEmpty()) {
+        } else if (isEmpty()) {
             throw new UnsupportedOperationException("El stack está vacío");
         }
         return stack[top];
     }
-    
+
     public boolean isEmpty() {
         return top == -1;
     }
