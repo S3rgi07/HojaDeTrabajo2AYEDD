@@ -9,11 +9,12 @@ public class Calculator implements Calc {
 
     /**
      * Verifica si el token es un operador válido
+     * 
      * @param token
      * @return
      */
 
-    /** 
+    /**
      * @param token
      * @return boolean
      */
@@ -24,6 +25,7 @@ public class Calculator implements Calc {
 
     /**
      * Aplica el operador a los operandos dados
+     * 
      * @param a
      * @param b
      * @param operator
@@ -51,11 +53,12 @@ public class Calculator implements Calc {
     /**
      * 
      * Realiza la operación postfix dada en la cadena de entrada
+     * 
      * @param input
      * @return
      */
 
-    /** 
+    /**
      * @param input
      * @return double
      */

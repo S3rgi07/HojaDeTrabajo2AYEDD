@@ -7,7 +7,6 @@ public class StackO<T> implements Stack<T> {
     private int capacidad_inicial = 10;
     private int top;
 
-
     /**
      * Constructor
      */
@@ -17,12 +16,16 @@ public class StackO<T> implements Stack<T> {
 
     /**
      * Agrega un item al stack.
+     * 
      * @param item
      */
-    /** 
+    /**
      * @param item
      */
-    /** 
+    /**
+     * @param item
+     */
+    /**
      * @param item
      */
     @Override
@@ -35,12 +38,16 @@ public class StackO<T> implements Stack<T> {
 
     /**
      * Remueve y retorna el item en la cima del stack.
+     * 
      * @return
      */
-    /** 
+    /**
      * @return T
      */
-    /** 
+    /**
+     * @return T
+     */
+    /**
      * @return T
      */
     @Override
@@ -54,13 +61,17 @@ public class StackO<T> implements Stack<T> {
 
     /**
      * Retorna el item en la cima del stack sin removerlo.
+     * 
      * @return
      */
 
-    /** 
+    /**
      * @return T
      */
-    /** 
+    /**
+     * @return T
+     */
+    /**
      * @return T
      */
     @Override
@@ -75,18 +86,21 @@ public class StackO<T> implements Stack<T> {
 
     /**
      * Verifica si el stack está vacío
+     * 
      * @return
      */
-    /** 
+    /**
      * @return boolean
      */
-    /** 
+    /**
+     * @return boolean
+     */
+    /**
      * @return boolean
      */
     public boolean isEmpty() {
         return top == -1;
     }
-
 
     /**
      * Duplica el tamaño del stack cuando está lleno
